@@ -1,0 +1,538 @@
+@import "style.styl"
+
+body
+	width 100%
+	background-color none
+	border none
+	
+	header
+		height 100px
+		width 100%
+		margin 0px
+		padding 0px
+		background-color white
+		position fixed
+		z-index 9999
+		box-shadow 0px 0px 14px black
+
+		figure
+			height 70px
+			width 220px
+			margin 15px 0px 0px 100px
+			padding 0px
+			display inline-block
+			
+			img
+				height 100%
+				display inline-block
+
+		nav
+			height 70px
+			width 550px
+			margin 25px 50px 0px 0px
+			padding 0px
+			float right
+			display block
+
+			ul
+				list-style none
+				display block
+				width 100%
+				padding 0px
+				vertical-align middle
+				
+				li
+					list-style none
+					text-decoration none
+					display inline-block
+					margin 0px 25px	
+					padding 0px
+					
+					a
+						text-decoration none
+						margin 0px
+						padding 0px
+						padding-bottom 3px
+						font-family "Montserrat"
+						font-size 14px
+						font-weight normal
+						color #6d6e71
+						transition 0.1s
+
+					a:hover
+						border-bottom solid 2px #6d6e71
+						color #6d6e71
+							
+			
+	.segBanner, .segSubNav, .segValores, .segContacto, .segFooter
+		height 500px
+		margin 0px
+		padding 0px
+		display block
+		
+	.segBanner
+		position relative
+		top 97px
+		height 558px
+		.wrapperBanner
+			display block
+			margin 0 auto
+
+			#slide1, #slide2, #slide3
+				background-repeat no-repeat
+				background-size cover
+				
+			#slide1
+				background-image url("../img/Slide01.png")
+				
+			#slide2
+				background-image url("../img/Slide02.png")
+			#slide3
+				background-image url("../img/Slide03.png")
+				
+			.slide
+				display none
+				vertical-align top
+				margin 0px auto
+				width 100%
+				padding 0
+				position absolute
+				top 0
+				height 100%
+
+			.slide_visible
+				display block
+
+			.slide
+					
+				.marco
+					width 430px
+					height 180px
+					float right
+					position relative
+					top 250px
+					right 100px
+					margin 0px
+					padding 0px
+					.fondo
+						height 100%
+						width 100%
+						margin 0px
+						padding 0px
+						background-color #df3d46
+						opacity 0.3
+						border-top-right-radius 7px
+						border-bottom-right-radius 7px
+						
+					.cont
+						width 100%
+						height 100%
+						position relative
+						top -180px
+						
+						h1, h2
+							float right
+							display inline
+							
+						h1
+							margin 0px 25px 0px 0px
+							padding 0px 0px 5px 0px
+							max-width 295px
+							font-family "Montserrat"
+							font-weight normal
+							font-style normal
+							font-size 1.9em
+							position relative
+							top 15px
+							color white
+							border-bottom solid 1px #df3d46
+							text-align right
+						
+						h2
+							margin 5px 25px 0px 0px
+							padding 0px
+							max-width 359px
+							font-family "Oxygen"
+							font-weight lighter
+							font-size 1.4em
+							position relative
+							top 15px
+							color white
+							text-align right
+
+
+
+			.wrapperPaginacion
+				height 20px
+				width 120px
+				margin 0 auto
+				position relative
+				top 555px
+				float right
+				right 80px
+
+				.paginacion
+
+
+				.paginacion:before
+					content: "•"
+					color white
+					font-weight bold
+					font-size 50px
+					margin 0 4px
+
+				.paginaVisible:before
+					color #df3d46
+					
+
+		
+
+	.segSubNav
+		background-image url("../img/Oficina.png")
+		background-repeat no-repeat
+		background-attachment fixed
+		background-position center
+		background-size 100% 100%
+		height 580px
+		position relative
+		top 96px
+		.anclaSubnav
+			position relative
+			top -104px
+		
+		h3
+			width 100%
+			height 96px
+			vertical-align middle
+			line-height 96px
+			background-color white
+			color #004b67
+			text-align center
+			margin 0px
+			padding 0px 0px 7px 0px
+			border none
+			display block
+			font-family "Oxygen"
+			font-weight lighter
+			font-size 2.1em
+			
+		.wrapperSubnav
+			width 1000px
+			margin 50px auto 0px auto
+			padding 0px
+			
+			ul
+				width 100%
+				display block
+				margin 0px
+				padding 0px
+				
+				.botoneraSubnav
+					width 310px
+					border-bottom solid 3px #00506d
+					height 135px
+					margin 0px 10px 15px 10px
+					padding 0px
+					background-color #FAFAFA
+					display inline-block
+					position relative
+					left 0px
+
+					a
+						display block
+						width 100%
+						margin 0px
+						padding 0px
+						height 100%
+						text-decoration none
+						
+						span
+							display inline-block
+							background-color #E6E6E6
+							width 75px
+							height 100%
+							margin 0px
+							padding 0px
+							
+							.icoSubnav
+								height 60px
+								display block
+								vertical-align middle
+								margin 50% auto
+						
+						h1
+							font-family "Exo 2"
+							font-weight 300
+							font-style italic
+							font-size 1.9em
+							float right
+							width 150px
+							padding 0px
+							margin 40px 40px 0px 0px
+							color #6d6e71
+							display block
+							line-height 0.9
+
+				.nivelDesktop
+					clear both
+					position relative
+					left 170px
+
+
+
+	.segValores
+		height 500px
+		background-image url("../img/AptitudesBanner.png")
+		background-size cover
+		position relative
+		top 95px
+
+		.anclaValores
+			position relative
+			top -104px
+		
+		h3
+			width 100%
+			height 96px
+			line-height 96px
+			background-color white
+			color #00506d
+			text-align center
+			margin 0px
+			padding 0px 0px 7px 0px
+			border none
+			display block
+			font-family "Oxygen"
+			font-weight lighter
+			font-size 2.1em
+
+		.wrapperIcoValores
+			width 860px
+			margin 80px auto 0px auto
+			padding 0px
+			height 310px
+		
+
+			span
+				display block
+				float left
+				width 211px
+				height 211px
+				border solid 1px white
+				border-right none
+				margin 0px
+				padding 0px
+
+				.icoValores
+					display block
+					height 70px
+					margin 30px auto 0px auto
+					padding 0px
+				
+				h4
+					font-family "Oxygen"
+					font-style normal
+					font-weight 300
+					font-size 1.1em
+					color #FAFAFA
+					text-align center
+					width 130px
+					line-height 1.1em
+					margin 20px auto 0px auto
+					padding 0px
+					
+
+			.bloqD	
+				border-right solid 1px white
+					
+	.segContacto
+		height 500px
+		background-color white
+		margin 0px
+		padding 0px
+		position relative
+		top 90px
+
+		.anclaContacto
+			position relative
+			top -104px
+
+		h2
+			width 600px
+			height 56px
+			color #df3d46
+			text-align center
+			margin 0px auto
+			padding 50px 0px 60px 0px
+			letter-spacing 1px
+			display block
+			font-family "Oxygen"
+			font-weight lighter
+			font-size 2.1em
+
+		.wrapperInfoContacto
+			width 860px
+			margin 30px auto 0px auto
+			padding 0px
+			height 400px
+
+			.wrapperContactoA, .wrapperContactoB, .wrapperContactoC
+				display block
+				height 250px
+				margin 0px
+				padding 0px
+				float left
+
+				h6
+					font-family "Oxygen"
+					font-weight lighter
+					font-size 1em
+					font-style normal
+					color #6d6e71
+					margin 0px
+					padding 0px
+			
+			.wrapperContactoA
+				width 220px
+
+				h6
+					margin-left 23px
+
+				.logoSegContacto
+						height 65px
+						margin-top 5px
+
+				ul
+					text-decoration none
+					list-style none
+					display block
+					width 100%
+					margin 15px auto 0px auto
+					padding 0px
+
+					li
+						list-style none
+						margin 0px
+						padding 0px
+
+						.datosContacto, span
+							display inline-block
+					
+						.datosContacto
+							color #6d6e71
+							font-family "Oxygen"
+							font-size 0.9em
+							font-weight 200
+							font-style normal
+							line-height 1
+							margin 3px 0px 3px 2px
+
+			
+						.icoContE:before
+							content:"@"
+							color #df3d46
+							font-weight normal
+							font-size 1.2em
+						
+
+						.icon-oficina
+							position relative
+							top -15px
+							color #df3d46
+
+						span:before
+							font-size 0.8em
+							color #df3d46
+					
+			.wrapperContactoB
+				width 220px
+				
+				.mapa
+					margin-top 10px
+
+			.wrapperContactoC
+				width 410px
+
+				h6
+					margin-left 8px
+
+				#mensaje
+					display inline
+					width 371px
+					height 130px
+
+				.casillas
+					background-color white
+					height 20px
+					margin 8px
+					padding 8px 10px
+					font-family "Oxygen"
+					font-style normal
+					font-size 0.9em
+					color white
+					font-weight lighter
+					border solid 1px #6d6e71
+
+				input::-webkit-input-placeholder {
+				    color:    #6d6e71;
+				}
+				input::-moz-placeholder {
+				    color:    #6d6e71;
+				}
+								
+				textarea::-webkit-input-placeholder {
+				    color:    #6d6e71;
+				}
+				textarea::-moz-placeholder {
+				    color:    #6d6e71;
+				}
+				.iptA
+					width 166px
+
+
+				.btnEnviar
+					display block
+					border none
+					padding 6px 0px
+					margin 8px
+					background-color #df3d46
+					color white
+					font-family "Oxygen"
+					font-style normal
+					font-weight normal
+					font-size 1.4em
+					width 190px
+
+	.segFooter
+		background-color #00506d
+		display block
+		height 70px
+		margin 0px
+		padding 0px
+		position relative
+		border solid 1px #00374e
+		position relative
+		top 150px
+		
+		a
+			text-decoration none
+			width 280px
+			margin 23px auto 0px auto
+			display block
+			p
+				font-family "Oxygen"
+				font-weight lighter
+				font-size 9px
+				color #00a1a9
+				display block
+				position relative
+				top -10px
+			img
+				height 25px
+				margin 0px
+				
+			img, p
+				display inline-block
+				
+
+
